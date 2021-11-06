@@ -1,0 +1,350 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+/*générique*/
+
+
+body {
+    font-family: helvetica, sans-serif;
+    background: url("../img/bkgd_page.jpg") no-repeat top / 100%;
+    background-color: #f6f6f6;
+    color: #343434;
+}
+
+.wrapper {
+    font-size: 18px;
+    margin: 0px auto;
+    width: 1024px;
+    padding-top: 45px;
+}
+/*fin générique*/
+
+/*flottements*/
+
+.fl-l {
+    float: left;
+}
+.fl-r {
+    float: right;
+}
+.clear {
+    clear: both;
+    height: 0px
+}
+/*flottements*/
+/*logo e menu*/
+#logo {
+    width: 160px;
+}
+/*  */
+.main-nav {
+    margin: 25px 0 0 0;
+    border: 1px dashed #fff;
+}
+
+.nav-link {
+    float: left;
+}
+.nav-link a {
+    color: #fff;
+    text-decoration: none;
+    font: 16px/2 arial;
+    padding: 0px 20px;
+    display: block;
+    border-right: 1px dashed #fff;
+}
+.nav-link:last-of-type a {
+    border-right: none;
+}
+
+.nav-link:hover a {
+    color: #375a76;;
+    background-color: #fff;
+}
+
+/*fin logo et menu*/
+
+/*début slogan*/
+
+.center{
+    text-align: center
+}
+
+.slogan {
+    margin: 160px 0 80px 0;
+    color: #FFFFFF;
+}
+.slogan h1 {
+    font: bold 72px/120% verdana;
+
+}
+.slogan  h2 {
+    font: 48px/120% times;
+}
+.slogan  p {
+    font: 24px/140% times;
+    margin-bottom: 10px
+}
+
+
+/* couleur de fond et row */
+.bgk-color {
+    background: #f6f6f6;
+}
+
+.row {
+    padding: 40px 15px;
+}
+.row:last-of-type {
+    margin-bottom: 100px;
+    background-color: #ddeae4;
+    border:6px solid #305a47;
+    margin: 0 25px 100px 25px;
+}
+/* fin main, footer et row */
+
+/*première rangée, colonnage */
+
+.col-1 {
+    width: calc(75% - 20px);
+    margin: 0 10px;
+}
+
+.col-2 {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+}
+.col-50 {
+    width: calc(50% - 20px);
+    margin: 35px 10px;
+}
+/*fin première rangée, colonnage */
+
+/* item */
+.item {
+    margin: 25px 0;
+    line-height: 130%;
+}
+.item img {
+    float: left;
+    margin: 0px 10px 10px 0;
+    border:3px solid #444;
+}
+.item h3 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 130%;
+}
+.item p {
+    font-size: 18px;
+    line-height: 130%;
+    padding-bottom: 4px;
+}
+.item a:hover {
+    opacity:0.5;
+}
+.item .meta {
+    font-size: 14px;
+    line-height: 130%;
+    padding-bottom: 4px;
+}
+.item .author {
+    color: #38b4b4;
+}
+.item .date {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* fin .item */
+/*.item-product*/
+.item-product {
+    margin-top: 55px;
+}
+.item-product-description {
+    font-size: 0.8em;
+}
+.item-product-description a{
+    color: #a22755;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+.item-product-description a:hover  {
+    color:#ccc;
+}
+
+/*fin item product*/
+
+/*debut boite survol saut */
+.boite-survol  {
+    position: relative;
+}
+.boite-survol img {
+    display: block;
+    /*pour éviter un léger décalage 
+    visible au survol*/
+}
+.legende-survol {
+    position: absolute;
+    padding-top: 175px;
+    left:0;
+    bottom:0px;
+    right: 0;
+    background-color: rgba(24,23,23,0.5);
+    text-align: center;
+    color: #fff;
+    display: none;
+    top: 0;
+
+}
+.brd-img {
+    border: 1px solid #000;
+}
+
+.boite-survol:hover .legende-survol {
+    display: block;
+}           
+.legende-survol h2 {
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+.legende-survol p {
+    font-size: 1.3em;
+}
+
+.box-green a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 200px;
+    padding: 10px;
+    background-color: #0c7f06;
+    margin: 30px auto;
+    display: block;
+}
+
+.box-green a:hover {
+    color:#ccc;
+}
+
+/*fin boite survol saut */
+/* début item-book */
+.item-book {
+    width: 50%;
+    padding: 22px;
+    border:6px solid #305a47;
+    text-align: center;
+    background-color: #ddeae4;
+}
+
+.item-book:nth-child(odd) {
+  border-right:none;
+}
+
+.item-book:nth-child(1), .item-book:nth-child(2) {
+    border-bottom:none;
+
+}
+
+/* début formulaire */
+
+.p20 {
+    padding: 20px
+} 
+.bk-db {
+    background-color: #ddeae4;
+}
+.ch-demi{
+    width: 49%;
+}
+.ch-plein{
+    width: 100%;
+}
+.formulaire {
+    width: 60%;
+    margin: 0 auto;
+    font-family: helvetica, sans-serif;
+    border:none;
+}
+
+.formulaire legend {
+    font-size: 1.6em;
+    padding: 15px 0;
+}
+.formulaire p {
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+
+.formulaire input {
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+}
+
+.formulaire  textarea{
+    height: 150px;
+    font-size: 0.8em;
+    font-family: arial, helvetica, sans-serif;
+    /*on force la famille de police sur textarea*/
+}
+.formulaire input[type="submit"], 
+.formulaire input[type="button"]
+{
+    display: block;
+    color: #ededed;
+    background: #305a47;
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ddeae4;
+}
+.formulaire input[type="submit"]:hover, 
+.formulaire input[type="button"]:hover
+{
+    background: #109177;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* fin formulaire*/
+
+/*footer début*/
+.fixe {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /*
+    en indiquant une largeur 100%
+    on aura la largeur du parent #wrapper
+    et le footer ne prendra pas toute la largeur
+    de l'écrane
+    le repère de la position fixe étant l'écran
+    en indiquant left:0 et right:0
+    on n'a pas besoin de spécifier la taille
+    */
+}
+
+.main-footer {
+    background-color: #305a47;
+    padding: 5px 25px 25px ;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.liens-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.liens-footer a:hover {
+    color: #b1b3b6;
+}
+.liens-footer li {
+    text-align: center;
+    display: inline;
+    padding: 0 1em;
+}
+/*fin footer*/
